@@ -1,0 +1,25 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="success">
+    <ion-title>Registro TdeA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-content [fullscreen]="true">
+    <ion-item>
+      <ion-label position="floating">Correo institucional</ion-label>
+      <ion-input type="email" [(ngModel)] = "user.email" required></ion-input>
+    </ion-item>
+    
+    
+    <ion-item>
+      <ion-label position="floating">Contraseña</ion-label>
+      <ion-input type="password" [(ngModel)] = "user.password" required></ion-input>
+    </ion-item>
+    
+
+    <ion-button class="primary" color="primary" expand="full" (click)="register(user)" >Registrarse</ion-button>
+
+</ion-content>
+
